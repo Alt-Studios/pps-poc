@@ -1,10 +1,8 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { CalculatorProvider } from '@/context/calculator-context'
 import HomePage from '@/pages/home'
-
-function Placeholder({ name }: { name: string }) {
-  return <div className="p-8 text-dark-text">{name} page</div>
-}
+import ResultsPage from '@/pages/results'
+import MoreDetailsPage from '@/pages/more-details'
 
 export default function App() {
   return (
@@ -12,8 +10,9 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/results" element={<Placeholder name="Results" />} />
-          <Route path="/more-details" element={<Placeholder name="More Details" />} />
+          <Route path="/results" element={<ResultsPage />} />
+          <Route path="/more-details" element={<MoreDetailsPage />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>
     </CalculatorProvider>
