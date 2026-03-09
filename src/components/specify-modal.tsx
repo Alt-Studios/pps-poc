@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import {
   Dialog,
   DialogContent,
@@ -37,6 +37,16 @@ export function SpecifyModal({
   const [disabilityPremium, setDisabilityPremium] = useState(initialValues?.disabilityPremium ?? 0)
   const [criticalIllnessPremium, setCriticalIllnessPremium] = useState(initialValues?.criticalIllnessPremium ?? 0)
   const [incomeProtectionPremium, setIncomeProtectionPremium] = useState(initialValues?.incomeProtectionPremium ?? 0)
+
+  // Sync state when modal reopens with new initialValues
+  useEffect(() => {
+    if (open) {
+      setLifePremium(initialValues?.lifePremium ?? 0)
+      setDisabilityPremium(initialValues?.disabilityPremium ?? 0)
+      setCriticalIllnessPremium(initialValues?.criticalIllnessPremium ?? 0)
+      setIncomeProtectionPremium(initialValues?.incomeProtectionPremium ?? 0)
+    }
+  }, [open, initialValues])
 
   const total = lifePremium + disabilityPremium + criticalIllnessPremium + incomeProtectionPremium
 

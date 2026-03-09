@@ -12,10 +12,12 @@ export default function MoreDetailsPage() {
 
   const age65Projection = result.projections[result.projections.length - 1]
 
+  if (!age65Projection) return <Navigate to="/" replace />
+
   return (
-    <div className="min-h-screen bg-[#faf9f5]">
+    <div className="min-h-screen bg-cream">
       <div className="mx-auto max-w-5xl px-4 py-12">
-        <h1 className="mb-8 text-center text-lg font-semibold uppercase tracking-wider text-[#091e35]">
+        <h1 className="mb-8 text-center text-lg font-semibold uppercase tracking-wider text-navy">
           Profit-Share Breakdown at Age 65
         </h1>
 

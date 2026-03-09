@@ -26,24 +26,23 @@ export default function AllocationTiles({ projection }: AllocationTilesProps) {
           style={{ borderTopColor: cat.color }}
         >
           <CardContent>
-            <p className="text-xs font-medium uppercase tracking-wider text-[#091e35]/60">
+            <p className="text-xs font-medium uppercase tracking-wider text-navy/60">
               {cat.label}
             </p>
-            <p className="mt-1 text-xl font-bold text-[#091e35]">
+            <p className="mt-1 text-xl font-bold text-navy">
               {formatCurrency(projection[cat.key])}
             </p>
           </CardContent>
         </Card>
       ))}
       <Card
-        className="border-t-4 bg-[#091e35]/5"
-        style={{ borderTopColor: '#091e35' }}
+        className="border-t-4 border-t-navy bg-navy/5"
       >
         <CardContent>
-          <p className="text-xs font-medium uppercase tracking-wider text-[#091e35]/60">
+          <p className="text-xs font-medium uppercase tracking-wider text-navy/60">
             Total
           </p>
-          <p className="mt-1 text-xl font-bold text-[#091e35]">
+          <p className="mt-1 text-xl font-bold text-navy">
             {formatCurrency(total)}
           </p>
         </CardContent>
