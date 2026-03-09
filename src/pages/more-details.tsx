@@ -15,13 +15,13 @@ export default function MoreDetailsPage() {
   if (!age65Projection) return <Navigate to="/" replace />
 
   return (
-    <div className="min-h-screen bg-cream-light">
+    <div className="min-h-screen bg-cream-light dark:bg-navy-dark">
       <div className="mx-auto max-w-5xl px-4 py-12">
-        <h1 className="mb-8 text-center text-2xl font-normal uppercase tracking-[0.04em] text-navy">
+        <h1 className="mb-8 text-center text-2xl font-normal uppercase tracking-[0.04em] text-navy dark:text-white">
           Profit-Share Breakdown at Age 65
         </h1>
 
-        <Card className="mb-8 bg-white shadow-md">
+        <Card className="mb-8 bg-white dark:bg-navy shadow-md dark:border-white/10">
           <CardContent className="pt-4">
             <AllocationPieChart projection={age65Projection} />
           </CardContent>
@@ -33,12 +33,12 @@ export default function MoreDetailsPage() {
 
         <div className="flex justify-center gap-4">
           <Link to="/results">
-            <Button variant="outline" className="rounded-full px-6">
+            <Button variant="outline" className="rounded-full px-6 dark:text-white dark:border-white/20">
               &larr; Back to Results
             </Button>
           </Link>
           <Link to="/">
-            <Button variant="outline" className="rounded-full px-6">
+            <Button variant="outline" className="rounded-full px-6 dark:text-white dark:border-white/20">
               Recalculate
             </Button>
           </Link>

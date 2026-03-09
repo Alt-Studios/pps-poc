@@ -18,13 +18,13 @@ export default function ResultsPage() {
       : (result.projections.find((p) => p.anb === 65)?.life ?? 0)
 
   return (
-    <div className="min-h-screen bg-cream-light">
+    <div className="min-h-screen bg-cream-light dark:bg-navy-dark">
       <div className="mx-auto max-w-5xl px-4 py-12">
         <div className="mb-10 text-center">
           <p className="text-xs uppercase tracking-[0.12em] text-gold">
             Your projected additional
           </p>
-          <p className="my-2 text-5xl font-normal tracking-[0.02em] text-navy">
+          <p className="my-2 text-5xl font-normal tracking-[0.02em] text-navy dark:text-white">
             +{' '}
             <CountUp
               prefix="R"
@@ -34,12 +34,12 @@ export default function ResultsPage() {
               onEnd={fireConfetti}
             />
           </p>
-          <p className="text-base tracking-[0.04em] text-muted-text">
+          <p className="text-base tracking-[0.04em] text-muted-text dark:text-white/60">
             Profit-Share by your 65th birthday!
           </p>
         </div>
 
-        <Card className="mb-8 bg-white shadow-md">
+        <Card className="mb-8 bg-white dark:bg-navy shadow-md dark:border-white/10">
           <CardContent className="pt-4">
             <ResultsChart projections={result.projections} />
           </CardContent>
@@ -52,7 +52,7 @@ export default function ResultsPage() {
             </Button>
           </Link>
           <Link to="/">
-            <Button variant="outline" className="rounded-full px-6">
+            <Button variant="outline" className="rounded-full px-6 dark:text-white dark:border-white/20">
               Recalculate
             </Button>
           </Link>

@@ -22,27 +22,27 @@ export default function AllocationTiles({ projection }: AllocationTilesProps) {
       {CATEGORIES.map((cat) => (
         <Card
           key={cat.key}
-          className={`border-t-4 ${projection[cat.key] <= 0 ? 'opacity-40' : ''}`}
+          className={`border-t-4 bg-white dark:bg-navy ${projection[cat.key] <= 0 ? 'opacity-40' : ''}`}
           style={{ borderTopColor: cat.color }}
         >
           <CardContent>
-            <p className="text-xs font-medium uppercase tracking-wider text-navy/60">
+            <p className="text-xs font-medium uppercase tracking-wider text-navy/60 dark:text-white/60">
               {cat.label}
             </p>
-            <p className="mt-1 text-xl font-bold text-navy">
+            <p className="mt-1 text-xl font-bold text-navy dark:text-white">
               {formatCurrency(projection[cat.key])}
             </p>
           </CardContent>
         </Card>
       ))}
       <Card
-        className="border-t-4 border-t-navy bg-navy/5"
+        className="border-t-4 border-t-navy dark:border-t-white bg-navy/5 dark:bg-white/5"
       >
         <CardContent>
-          <p className="text-xs font-medium uppercase tracking-wider text-navy/60">
+          <p className="text-xs font-medium uppercase tracking-wider text-navy/60 dark:text-white/60">
             Total
           </p>
-          <p className="mt-1 text-xl font-bold text-navy">
+          <p className="mt-1 text-xl font-bold text-navy dark:text-white">
             {formatCurrency(total)}
           </p>
         </CardContent>
