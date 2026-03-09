@@ -28,12 +28,12 @@ export default function ResultsPage() {
   return (
     <div className="min-h-screen bg-cream-light dark:bg-navy-dark">
       <ThemeToggle />
-      <div className="mx-auto max-w-5xl px-4 py-12">
-        <div className="mb-10 text-center">
+      <div className="mx-auto max-w-5xl px-4 py-8 sm:py-12">
+        <div className="mb-6 sm:mb-10 text-center">
           <p className="text-xs uppercase tracking-[0.12em] text-gold">
             Your projected additional
           </p>
-          <p className="my-2 text-5xl font-normal tracking-[0.02em] text-navy dark:text-white">
+          <p className="my-2 text-3xl sm:text-5xl font-normal tracking-[0.02em] text-navy dark:text-white">
             +{' '}
             <CountUp
               prefix="R"
@@ -43,33 +43,33 @@ export default function ResultsPage() {
               onEnd={fireConfetti}
             />
           </p>
-          <p className="text-base tracking-[0.04em] text-muted-text dark:text-white/60">
+          <p className="text-sm sm:text-base tracking-[0.04em] text-muted-text dark:text-white/60">
             Profit-Share by your 65th birthday!
           </p>
         </div>
 
         {inputs && <InputSummary inputs={inputs} />}
 
-        <Card className="mb-8 bg-white dark:bg-navy shadow-md dark:border-white/10">
-          <CardContent className="pt-4">
+        <Card className="mb-6 sm:mb-8 bg-white dark:bg-navy shadow-md dark:border-white/10">
+          <CardContent className="p-2 sm:p-4 pt-2 sm:pt-4">
             <ResultsChart projections={result.projections} />
           </CardContent>
         </Card>
 
-        <div className="flex justify-center gap-4">
-          <Link to="/more-details">
-            <Button className="rounded-full bg-gold px-6 text-white hover:bg-gold/80">
+        <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
+          <Link to="/more-details" className="w-full sm:w-auto">
+            <Button className="w-full sm:w-auto rounded-full bg-gold px-6 text-white hover:bg-gold/80">
               More Details &rarr;
             </Button>
           </Link>
-          <Link to="/">
-            <Button variant="outline" className="rounded-full px-6 dark:text-white dark:border-white/20">
+          <Link to="/" className="w-full sm:w-auto">
+            <Button variant="outline" className="w-full sm:w-auto rounded-full px-6 dark:text-white dark:border-white/20">
               Edit Inputs
             </Button>
           </Link>
           <Button
             variant="outline"
-            className="rounded-full px-6 dark:text-white dark:border-white/20"
+            className="w-full sm:w-auto rounded-full px-6 dark:text-white dark:border-white/20"
             onClick={handleStartOver}
           >
             Start Over

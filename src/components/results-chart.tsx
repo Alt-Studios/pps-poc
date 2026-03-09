@@ -26,21 +26,23 @@ export default function ResultsChart({ projections }: ResultsChartProps) {
   const axisColor = theme === 'dark' ? '#ffffff' : '#091e35'
 
   return (
-    <ResponsiveContainer width="100%" height={400}>
-      <BarChart data={projections}>
+    <ResponsiveContainer width="100%" height={300} minHeight={250}>
+      <BarChart data={projections} margin={{ top: 5, right: 5, left: 0, bottom: 5 }}>
         <XAxis
           dataKey="anb"
-          tick={{ fill: axisColor }}
-          label={{ value: 'AGE', position: 'insideBottom', offset: -5, fill: axisColor }}
+          tick={{ fill: axisColor, fontSize: 11 }}
+          label={{ value: 'AGE', position: 'insideBottom', offset: -5, fill: axisColor, fontSize: 11 }}
         />
         <YAxis
           tickFormatter={formatAxis}
-          tick={{ fill: axisColor }}
-          label={{ value: 'RANDS', angle: -90, position: 'insideLeft', fill: axisColor }}
+          tick={{ fill: axisColor, fontSize: 11 }}
+          label={{ value: 'RANDS', angle: -90, position: 'insideLeft', fill: axisColor, fontSize: 11 }}
+          width={45}
         />
         <Tooltip
           formatter={(value) => formatCurrency(Number(value))}
           labelFormatter={(label) => `Age ${label}`}
+          cursor={{ fill: theme === 'dark' ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.04)' }}
           contentStyle={{
             backgroundColor: theme === 'dark' ? '#091e35' : '#ffffff',
             borderColor: theme === 'dark' ? 'rgba(255,255,255,0.2)' : '#cacaca',
@@ -49,7 +51,7 @@ export default function ResultsChart({ projections }: ResultsChartProps) {
           labelStyle={{ color: theme === 'dark' ? '#ffffff' : '#091e35' }}
           itemStyle={{ color: theme === 'dark' ? '#ffffff' : '#091e35' }}
         />
-        <Legend wrapperStyle={{ color: axisColor }} />
+        <Legend wrapperStyle={{ color: axisColor, paddingTop: 16, fontSize: 11 }} />
         <Bar
           dataKey="life"
           stackId="a"

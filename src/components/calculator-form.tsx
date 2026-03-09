@@ -14,20 +14,22 @@ interface FormErrors {
 
 export function CalculatorForm() {
   const navigate = useNavigate()
-  const { calculate } = useCalculator()
+  const { calculate, inputs: savedInputs } = useCalculator()
 
-  const [age, setAge] = useState('')
-  const [lifeOverallPremium, setLifeOverallPremium] = useState('')
-  const [shortTermPremium, setShortTermPremium] = useState('')
-  const [medicalAidPremium, setMedicalAidPremium] = useState('')
-  const [monthlyInvestment, setMonthlyInvestment] = useState('')
-  const [lumpSumInvestment, setLumpSumInvestment] = useState('')
+  const fmt = (n: number | undefined | null) => (n ? n.toString() : '')
 
-  const [lifePremium, setLifePremium] = useState(0)
-  const [disabilityPremium, setDisabilityPremium] = useState(0)
-  const [criticalIllnessPremium, setCriticalIllnessPremium] = useState(0)
-  const [incomeProtectionPremium, setIncomeProtectionPremium] = useState(0)
-  const [usedSpecifyModal, setUsedSpecifyModal] = useState(false)
+  const [age, setAge] = useState(() => fmt(savedInputs?.age))
+  const [lifeOverallPremium, setLifeOverallPremium] = useState(() => fmt(savedInputs?.lifeOverallPremium))
+  const [shortTermPremium, setShortTermPremium] = useState(() => fmt(savedInputs?.shortTermPremium))
+  const [medicalAidPremium, setMedicalAidPremium] = useState(() => fmt(savedInputs?.medicalAidPremium))
+  const [monthlyInvestment, setMonthlyInvestment] = useState(() => fmt(savedInputs?.monthlyInvestmentContribution))
+  const [lumpSumInvestment, setLumpSumInvestment] = useState(() => fmt(savedInputs?.lumpSumInvestmentContribution))
+
+  const [lifePremium, setLifePremium] = useState(savedInputs?.lifePremium ?? 0)
+  const [disabilityPremium, setDisabilityPremium] = useState(savedInputs?.disabilityPremium ?? 0)
+  const [criticalIllnessPremium, setCriticalIllnessPremium] = useState(savedInputs?.criticalIllnessPremium ?? 0)
+  const [incomeProtectionPremium, setIncomeProtectionPremium] = useState(savedInputs?.incomeProtectionPremium ?? 0)
+  const [usedSpecifyModal, setUsedSpecifyModal] = useState(savedInputs?.usedSpecifyModal ?? false)
 
   const [specifyOpen, setSpecifyOpen] = useState(false)
   const [errors, setErrors] = useState<FormErrors>({})
@@ -211,7 +213,7 @@ export function CalculatorForm() {
           <Label className="text-navy dark:text-white uppercase tracking-[0.12em] font-normal text-xs mb-1.5">
             Investment Contributions
           </Label>
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <div>
               <span className="text-muted-text dark:text-white/60 text-xs mb-1 block">Monthly</span>
               <div className="flex">

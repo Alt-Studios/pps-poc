@@ -58,14 +58,15 @@ export default function AllocationPieChart({ projection }: PieChartProps) {
     }))
 
   return (
-    <ResponsiveContainer width="100%" height={350}>
+    <ResponsiveContainer width="100%" height={300} minHeight={250}>
       <RechartsPieChart>
         <Pie
+          key={theme}
           data={data}
           cx="50%"
-          cy="50%"
-          innerRadius={60}
-          outerRadius={120}
+          cy="45%"
+          innerRadius="25%"
+          outerRadius="50%"
           dataKey="value"
           label={renderLabel}
         >
@@ -82,7 +83,7 @@ export default function AllocationPieChart({ projection }: PieChartProps) {
           }}
           itemStyle={{ color: theme === 'dark' ? '#ffffff' : '#091e35' }}
         />
-        <Legend wrapperStyle={{ color: labelColor }} />
+        <Legend wrapperStyle={{ color: labelColor, fontSize: 11 }} />
       </RechartsPieChart>
     </ResponsiveContainer>
   )

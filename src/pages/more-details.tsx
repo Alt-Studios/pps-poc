@@ -24,35 +24,35 @@ export default function MoreDetailsPage() {
   return (
     <div className="min-h-screen bg-cream-light dark:bg-navy-dark">
       <ThemeToggle />
-      <div className="mx-auto max-w-5xl px-4 py-12">
-        <h1 className="mb-8 text-center text-2xl font-normal uppercase tracking-[0.04em] text-navy dark:text-white">
+      <div className="mx-auto max-w-5xl px-4 py-8 sm:py-12">
+        <h1 className="mb-6 sm:mb-8 text-center text-xl sm:text-2xl font-normal uppercase tracking-[0.04em] text-navy dark:text-white">
           Profit-Share Breakdown at Age 65
         </h1>
 
-        <Card className="mb-8 bg-white dark:bg-navy shadow-md dark:border-white/10">
-          <CardContent className="pt-4">
+        <Card className="mb-6 sm:mb-8 bg-white dark:bg-navy shadow-md dark:border-white/10">
+          <CardContent className="p-2 sm:p-4 pt-2 sm:pt-4">
             <AllocationPieChart projection={age65Projection} />
           </CardContent>
         </Card>
 
-        <div className="mb-8">
+        <div className="mb-6 sm:mb-8">
           <AllocationTiles projection={age65Projection} />
         </div>
 
-        <div className="flex justify-center gap-4">
-          <Link to="/results">
-            <Button variant="outline" className="rounded-full px-6 dark:text-white dark:border-white/20">
+        <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
+          <Link to="/results" className="w-full sm:w-auto">
+            <Button variant="outline" className="w-full sm:w-auto rounded-full px-6 dark:text-white dark:border-white/20">
               &larr; Back to Results
             </Button>
           </Link>
-          <Link to="/">
-            <Button variant="outline" className="rounded-full px-6 dark:text-white dark:border-white/20">
+          <Link to="/" className="w-full sm:w-auto">
+            <Button variant="outline" className="w-full sm:w-auto rounded-full px-6 dark:text-white dark:border-white/20">
               Edit Inputs
             </Button>
           </Link>
           <Button
             variant="outline"
-            className="rounded-full px-6 dark:text-white dark:border-white/20"
+            className="w-full sm:w-auto rounded-full px-6 dark:text-white dark:border-white/20"
             onClick={handleStartOver}
           >
             Start Over

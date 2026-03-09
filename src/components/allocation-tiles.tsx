@@ -18,7 +18,7 @@ export default function AllocationTiles({ projection }: AllocationTilesProps) {
   const total = CATEGORIES.reduce((sum, cat) => sum + projection[cat.key], 0)
 
   return (
-    <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
+    <div className="grid grid-cols-2 gap-2 sm:gap-4 md:grid-cols-3">
       {CATEGORIES.map((cat) => (
         <Card
           key={cat.key}
@@ -29,7 +29,7 @@ export default function AllocationTiles({ projection }: AllocationTilesProps) {
             <p className="text-xs font-medium uppercase tracking-wider text-navy/60 dark:text-white/60">
               {cat.label}
             </p>
-            <p className="mt-1 text-xl font-bold text-navy dark:text-white">
+            <p className="mt-1 text-base sm:text-xl font-bold text-navy dark:text-white">
               {formatCurrency(projection[cat.key])}
             </p>
           </CardContent>
