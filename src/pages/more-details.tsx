@@ -1,4 +1,4 @@
-import { Navigate, Link } from 'react-router-dom'
+import { Navigate, Link, useNavigate } from 'react-router-dom'
 import { useCalculator } from '@/context/calculator-context'
 import AllocationPieChart from '@/components/pie-chart'
 import AllocationTiles from '@/components/allocation-tiles'
@@ -6,7 +6,13 @@ import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 
 export default function MoreDetailsPage() {
-  const { result } = useCalculator()
+  const { result, reset } = useCalculator()
+  const navigate = useNavigate()
+
+  function handleStartOver() {
+    reset()
+    navigate('/')
+  }
 
   if (!result) return <Navigate to="/" replace />
 
@@ -39,9 +45,16 @@ export default function MoreDetailsPage() {
           </Link>
           <Link to="/">
             <Button variant="outline" className="rounded-full px-6 dark:text-white dark:border-white/20">
-              Recalculate
+              Edit Inputs
             </Button>
           </Link>
+          <Button
+            variant="outline"
+            className="rounded-full px-6 dark:text-white dark:border-white/20"
+            onClick={handleStartOver}
+          >
+            Start Over
+          </Button>
         </div>
       </div>
     </div>

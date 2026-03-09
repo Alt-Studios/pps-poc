@@ -1,4 +1,4 @@
-import { Navigate, Link } from 'react-router-dom'
+import { Navigate, Link, useNavigate } from 'react-router-dom'
 import CountUp from 'react-countup'
 import { useCalculator } from '@/context/calculator-context'
 import { InputSummary } from '@/components/input-summary'
@@ -8,8 +8,14 @@ import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 
 export default function ResultsPage() {
-  const { result, inputs } = useCalculator()
+  const { result, inputs, reset } = useCalculator()
+  const navigate = useNavigate()
   const fireConfetti = useConfetti()
+
+  function handleStartOver() {
+    reset()
+    navigate('/')
+  }
 
   if (!result) return <Navigate to="/" replace />
 
@@ -56,9 +62,16 @@ export default function ResultsPage() {
           </Link>
           <Link to="/">
             <Button variant="outline" className="rounded-full px-6 dark:text-white dark:border-white/20">
-              Recalculate
+              Edit Inputs
             </Button>
           </Link>
+          <Button
+            variant="outline"
+            className="rounded-full px-6 dark:text-white dark:border-white/20"
+            onClick={handleStartOver}
+          >
+            Start Over
+          </Button>
         </div>
       </div>
     </div>
