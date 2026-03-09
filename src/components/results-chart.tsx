@@ -40,7 +40,7 @@ export default function ResultsChart({ projections }: ResultsChartProps) {
         <Bar
           dataKey="life"
           stackId="a"
-          fill="#b09455"
+          fill="#b09555"
           name="Profit-Share (Life Product Only)"
         />
         <Bar

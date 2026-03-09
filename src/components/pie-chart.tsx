@@ -14,7 +14,7 @@ interface PieChartProps {
 }
 
 const CATEGORIES = [
-  { key: 'life' as const, color: '#b09455', label: 'Life Allocation' },
+  { key: 'life' as const, color: '#b09555', label: 'Life Allocation' },
   { key: 'sti' as const, color: '#82967f', label: 'Car & Home Allocation' },
   { key: 'profmed' as const, color: '#a8605f', label: 'Medical Aid Allocation' },
   { key: 'investment' as const, color: '#604760', label: 'Investment Allocation' },

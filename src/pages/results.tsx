@@ -18,13 +18,13 @@ export default function ResultsPage() {
       : (result.projections.find((p) => p.anb === 65)?.life ?? 0)
 
   return (
-    <div className="min-h-screen bg-cream">
+    <div className="min-h-screen bg-cream-light">
       <div className="mx-auto max-w-5xl px-4 py-12">
         <div className="mb-10 text-center">
-          <p className="text-sm uppercase tracking-wider text-navy/60">
+          <p className="text-xs uppercase tracking-[0.12em] text-gold">
             Your projected additional
           </p>
-          <p className="my-2 text-5xl font-bold text-gold">
+          <p className="my-2 text-5xl font-normal tracking-[0.02em] text-navy">
             +{' '}
             <CountUp
               prefix="R"
@@ -34,7 +34,7 @@ export default function ResultsPage() {
               onEnd={fireConfetti}
             />
           </p>
-          <p className="text-lg text-navy">
+          <p className="text-base tracking-[0.04em] text-muted-text">
             Profit-Share by your 65th birthday!
           </p>
         </div>

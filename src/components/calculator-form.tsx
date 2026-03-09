@@ -107,7 +107,7 @@ export function CalculatorForm() {
       <form onSubmit={handleSubmit} className="space-y-5">
         {/* Age */}
         <div>
-          <Label className="text-white uppercase tracking-wider font-bold text-xs mb-1.5">
+          <Label className="text-white uppercase tracking-[0.12em] font-normal text-xs mb-1.5">
             Age
           </Label>
           <div className="flex">
@@ -132,7 +132,7 @@ export function CalculatorForm() {
 
         {/* PPS Life Insurance Premium */}
         <div>
-          <Label className="text-white uppercase tracking-wider font-bold text-xs mb-1.5">
+          <Label className="text-white uppercase tracking-[0.12em] font-normal text-xs mb-1.5">
             PPS Life Insurance Premium
           </Label>
           <div className="flex">
@@ -165,7 +165,7 @@ export function CalculatorForm() {
 
         {/* Car & Home Premium */}
         <div>
-          <Label className="text-white uppercase tracking-wider font-bold text-xs mb-1.5">
+          <Label className="text-white uppercase tracking-[0.12em] font-normal text-xs mb-1.5">
             Car & Home Premium
           </Label>
           <div className="flex">
@@ -186,7 +186,7 @@ export function CalculatorForm() {
 
         {/* Medical Aid Premium */}
         <div>
-          <Label className="text-white uppercase tracking-wider font-bold text-xs mb-1.5">
+          <Label className="text-white uppercase tracking-[0.12em] font-normal text-xs mb-1.5">
             Medical Aid Premium
           </Label>
           <div className="flex">
@@ -207,7 +207,7 @@ export function CalculatorForm() {
 
         {/* Investment Contributions */}
         <div>
-          <Label className="text-white uppercase tracking-wider font-bold text-xs mb-1.5">
+          <Label className="text-white uppercase tracking-[0.12em] font-normal text-xs mb-1.5">
             Investment Contributions
           </Label>
           <div className="grid grid-cols-2 gap-3">
