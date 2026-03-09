@@ -121,9 +121,9 @@ export function CalculatorForm() {
                 if (errors.age) setErrors((prev) => ({ ...prev, age: undefined }))
               }}
               placeholder="Enter your age"
-              className="bg-white/10 text-white border-white/20 placeholder:text-white/40"
+              className="rounded-l-lg rounded-r-none bg-white/10 text-white border-white/20 placeholder:text-white/40"
             />
-            <span className="bg-white/10 text-white/60 font-medium px-3 py-1.5 rounded-r border border-l-0 border-white/20 text-sm flex items-center">
+            <span className="bg-white/80 text-navy font-semibold px-3 h-10 rounded-r-lg border border-l-0 border-white/20 text-sm flex items-center">
               years
             </span>
           </div>
@@ -136,7 +136,7 @@ export function CalculatorForm() {
             PPS Life Insurance Premium
           </Label>
           <div className="flex">
-            <span className="bg-white/80 text-navy font-semibold px-2 py-1.5 rounded-l border border-r-0 border-white/20 text-sm flex items-center">
+            <span className="bg-white/80 text-navy font-semibold px-3 h-10 rounded-l-lg border border-r-0 border-white/20 text-sm flex items-center">
               R
             </span>
             <Input
@@ -149,12 +149,13 @@ export function CalculatorForm() {
                 if (errors.lifeOverallPremium) setErrors((prev) => ({ ...prev, lifeOverallPremium: undefined }))
               }}
               placeholder="0.00"
-              className="rounded-l-none bg-white/10 text-white border-white/20 placeholder:text-white/40"
+              className="rounded-l-none rounded-r-lg bg-white/10 text-white border-white/20 placeholder:text-white/40"
             />
             <Button
               type="button"
               onClick={() => setSpecifyOpen(true)}
               variant="outline"
+              size="lg"
               className="ml-2 text-gold border-gold/40 hover:bg-gold/10 hover:text-gold uppercase tracking-wider text-xs shrink-0"
             >
               Specify
@@ -169,7 +170,7 @@ export function CalculatorForm() {
             Car & Home Premium
           </Label>
           <div className="flex">
-            <span className="bg-white/80 text-navy font-semibold px-2 py-1.5 rounded-l border border-r-0 border-white/20 text-sm flex items-center">
+            <span className="bg-white/80 text-navy font-semibold px-3 h-10 rounded-l-lg border border-r-0 border-white/20 text-sm flex items-center">
               R
             </span>
             <Input
@@ -179,7 +180,7 @@ export function CalculatorForm() {
               value={shortTermPremium}
               onChange={(e) => setShortTermPremium(e.target.value)}
               placeholder="0.00"
-              className="rounded-l-none bg-white/10 text-white border-white/20 placeholder:text-white/40"
+              className="rounded-l-none rounded-r-lg bg-white/10 text-white border-white/20 placeholder:text-white/40"
             />
           </div>
         </div>
@@ -190,7 +191,7 @@ export function CalculatorForm() {
             Medical Aid Premium
           </Label>
           <div className="flex">
-            <span className="bg-white/80 text-navy font-semibold px-2 py-1.5 rounded-l border border-r-0 border-white/20 text-sm flex items-center">
+            <span className="bg-white/80 text-navy font-semibold px-3 h-10 rounded-l-lg border border-r-0 border-white/20 text-sm flex items-center">
               R
             </span>
             <Input
@@ -200,7 +201,7 @@ export function CalculatorForm() {
               value={medicalAidPremium}
               onChange={(e) => setMedicalAidPremium(e.target.value)}
               placeholder="0.00"
-              className="rounded-l-none bg-white/10 text-white border-white/20 placeholder:text-white/40"
+              className="rounded-l-none rounded-r-lg bg-white/10 text-white border-white/20 placeholder:text-white/40"
             />
           </div>
         </div>
@@ -214,7 +215,7 @@ export function CalculatorForm() {
             <div>
               <span className="text-white/60 text-xs mb-1 block">Monthly</span>
               <div className="flex">
-                <span className="bg-white/80 text-navy font-semibold px-2 py-1.5 rounded-l border border-r-0 border-white/20 text-sm flex items-center">
+                <span className="bg-white/80 text-navy font-semibold px-3 h-10 rounded-l-lg border border-r-0 border-white/20 text-sm flex items-center">
                   R
                 </span>
                 <Input
@@ -224,14 +225,14 @@ export function CalculatorForm() {
                   value={monthlyInvestment}
                   onChange={(e) => setMonthlyInvestment(e.target.value)}
                   placeholder="0.00"
-                  className="rounded-l-none bg-white/10 text-white border-white/20 placeholder:text-white/40"
+                  className="rounded-l-none rounded-r-lg bg-white/10 text-white border-white/20 placeholder:text-white/40"
                 />
               </div>
             </div>
             <div>
               <span className="text-white/60 text-xs mb-1 block">Lump Sum Once-off</span>
               <div className="flex">
-                <span className="bg-white/80 text-navy font-semibold px-2 py-1.5 rounded-l border border-r-0 border-white/20 text-sm flex items-center">
+                <span className="bg-white/80 text-navy font-semibold px-3 h-10 rounded-l-lg border border-r-0 border-white/20 text-sm flex items-center">
                   R
                 </span>
                 <Input
@@ -241,7 +242,7 @@ export function CalculatorForm() {
                   value={lumpSumInvestment}
                   onChange={(e) => setLumpSumInvestment(e.target.value)}
                   placeholder="0.00"
-                  className="rounded-l-none bg-white/10 text-white border-white/20 placeholder:text-white/40"
+                  className="rounded-l-none rounded-r-lg bg-white/10 text-white border-white/20 placeholder:text-white/40"
                 />
               </div>
             </div>
