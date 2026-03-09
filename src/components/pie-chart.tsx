@@ -8,6 +8,7 @@ import {
 } from 'recharts'
 import type { Projection } from '@/lib/types'
 import { formatCurrency } from '@/lib/format-number'
+import { useTheme } from '@/context/theme-context'
 
 interface PieChartProps {
   projection: Projection
@@ -23,28 +24,31 @@ const CATEGORIES = [
 
 const RADIAN = Math.PI / 180
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-function renderLabel(props: any) {
-  const { cx, cy, midAngle, innerRadius, outerRadius, percent } = props
-  const radius = (innerRadius as number) + ((outerRadius as number) - (innerRadius as number)) * 1.4
-  const x = (cx as number) + radius * Math.cos(-(midAngle as number) * RADIAN)
-  const y = (cy as number) + radius * Math.sin(-(midAngle as number) * RADIAN)
-
-  return (
-    <text
-      x={x}
-      y={y}
-      fill="#091e35"
-      textAnchor={x > (cx as number) ? 'start' : 'end'}
-      dominantBaseline="central"
-      fontSize={12}
-    >
-      {`${((percent as number) * 100).toFixed(1)}%`}
-    </text>
-  )
-}
-
 export default function AllocationPieChart({ projection }: PieChartProps) {
+  const { theme } = useTheme()
+  const labelColor = theme === 'dark' ? '#ffffff' : '#091e35'
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  function renderLabel(props: any) {
+    const { cx, cy, midAngle, innerRadius, outerRadius, percent } = props
+    const radius = (innerRadius as number) + ((outerRadius as number) - (innerRadius as number)) * 1.4
+    const x = (cx as number) + radius * Math.cos(-(midAngle as number) * RADIAN)
+    const y = (cy as number) + radius * Math.sin(-(midAngle as number) * RADIAN)
+
+    return (
+      <text
+        x={x}
+        y={y}
+        fill={labelColor}
+        textAnchor={x > (cx as number) ? 'start' : 'end'}
+        dominantBaseline="central"
+        fontSize={12}
+      >
+        {`${((percent as number) * 100).toFixed(1)}%`}
+      </text>
+    )
+  }
+
   const data = CATEGORIES
     .filter((cat) => projection[cat.key] > 0)
     .map((cat) => ({
@@ -69,8 +73,16 @@ export default function AllocationPieChart({ projection }: PieChartProps) {
             <Cell key={index} fill={entry.color} />
           ))}
         </Pie>
-        <Tooltip formatter={(value) => formatCurrency(Number(value))} />
-        <Legend />
+        <Tooltip
+          formatter={(value) => formatCurrency(Number(value))}
+          contentStyle={{
+            backgroundColor: theme === 'dark' ? '#091e35' : '#ffffff',
+            borderColor: theme === 'dark' ? 'rgba(255,255,255,0.2)' : '#cacaca',
+            color: theme === 'dark' ? '#ffffff' : '#091e35',
+          }}
+          itemStyle={{ color: theme === 'dark' ? '#ffffff' : '#091e35' }}
+        />
+        <Legend wrapperStyle={{ color: labelColor }} />
       </RechartsPieChart>
     </ResponsiveContainer>
   )
