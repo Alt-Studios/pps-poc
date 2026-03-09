@@ -6,6 +6,7 @@ import { useConfetti } from '@/components/confetti'
 import ResultsChart from '@/components/results-chart'
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
+import { ThemeToggle } from '@/components/theme-toggle'
 
 export default function ResultsPage() {
   const { result, inputs, reset } = useCalculator()
@@ -26,6 +27,7 @@ export default function ResultsPage() {
 
   return (
     <div className="min-h-screen bg-cream-light dark:bg-navy-dark">
+      <ThemeToggle />
       <div className="mx-auto max-w-5xl px-4 py-12">
         <div className="mb-10 text-center">
           <p className="text-xs uppercase tracking-[0.12em] text-gold">
