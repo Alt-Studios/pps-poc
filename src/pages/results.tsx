@@ -1,13 +1,14 @@
 import { Navigate, Link } from 'react-router-dom'
 import CountUp from 'react-countup'
 import { useCalculator } from '@/context/calculator-context'
+import { InputSummary } from '@/components/input-summary'
 import { useConfetti } from '@/components/confetti'
 import ResultsChart from '@/components/results-chart'
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 
 export default function ResultsPage() {
-  const { result } = useCalculator()
+  const { result, inputs } = useCalculator()
   const fireConfetti = useConfetti()
 
   if (!result) return <Navigate to="/" replace />
@@ -38,6 +39,8 @@ export default function ResultsPage() {
             Profit-Share by your 65th birthday!
           </p>
         </div>
+
+        {inputs && <InputSummary inputs={inputs} />}
 
         <Card className="mb-8 bg-white dark:bg-navy shadow-md dark:border-white/10">
           <CardContent className="pt-4">
