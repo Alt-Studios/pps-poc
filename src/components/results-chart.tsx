@@ -26,13 +26,13 @@ export default function ResultsChart({ projections }: ResultsChartProps) {
   const axisColor = theme === 'dark' ? '#ffffff' : '#091e35'
 
   return (
-    <ResponsiveContainer width="100%" height={320} minHeight={270}>
-      <BarChart data={projections} margin={{ top: 10, right: 10, left: 10, bottom: 20 }}>
+    <ResponsiveContainer width="100%" height={340} minHeight={290}>
+      <BarChart data={projections} margin={{ top: 10, right: 10, left: 10, bottom: 30 }}>
         <XAxis
           dataKey="anb"
           tick={{ fill: axisColor, fontSize: 11 }}
           tickMargin={4}
-          label={{ value: 'AGE', position: 'insideBottom', offset: -12, fill: axisColor, fontSize: 10 }}
+          label={{ value: 'AGE', position: 'insideBottom', offset: -20, fill: axisColor, fontSize: 10 }}
         />
         <YAxis
           tickFormatter={formatAxis}
@@ -53,7 +53,7 @@ export default function ResultsChart({ projections }: ResultsChartProps) {
           labelStyle={{ color: theme === 'dark' ? '#ffffff' : '#091e35' }}
           itemStyle={{ color: theme === 'dark' ? '#ffffff' : '#091e35' }}
         />
-        <Legend wrapperStyle={{ color: axisColor, paddingTop: 24, fontSize: 11 }} />
+        <Legend wrapperStyle={{ color: axisColor, paddingTop: 32, fontSize: 11 }} />
         <Bar
           dataKey="life"
           stackId="a"
