@@ -26,18 +26,20 @@ export default function ResultsChart({ projections }: ResultsChartProps) {
   const axisColor = theme === 'dark' ? '#ffffff' : '#091e35'
 
   return (
-    <ResponsiveContainer width="100%" height={300} minHeight={250}>
-      <BarChart data={projections} margin={{ top: 5, right: 5, left: 0, bottom: 5 }}>
+    <ResponsiveContainer width="100%" height={320} minHeight={270}>
+      <BarChart data={projections} margin={{ top: 10, right: 10, left: 10, bottom: 20 }}>
         <XAxis
           dataKey="anb"
           tick={{ fill: axisColor, fontSize: 11 }}
-          label={{ value: 'AGE', position: 'insideBottom', offset: -5, fill: axisColor, fontSize: 11 }}
+          tickMargin={4}
+          label={{ value: 'AGE', position: 'insideBottom', offset: -12, fill: axisColor, fontSize: 10 }}
         />
         <YAxis
           tickFormatter={formatAxis}
           tick={{ fill: axisColor, fontSize: 11 }}
-          label={{ value: 'RANDS', angle: -90, position: 'insideLeft', fill: axisColor, fontSize: 11 }}
-          width={45}
+          tickMargin={4}
+          label={{ value: 'RANDS', angle: -90, position: 'insideLeft', offset: -5, fill: axisColor, fontSize: 10, dy: -10 }}
+          width={50}
         />
         <Tooltip
           formatter={(value) => formatCurrency(Number(value))}
@@ -51,7 +53,7 @@ export default function ResultsChart({ projections }: ResultsChartProps) {
           labelStyle={{ color: theme === 'dark' ? '#ffffff' : '#091e35' }}
           itemStyle={{ color: theme === 'dark' ? '#ffffff' : '#091e35' }}
         />
-        <Legend wrapperStyle={{ color: axisColor, paddingTop: 16, fontSize: 11 }} />
+        <Legend wrapperStyle={{ color: axisColor, paddingTop: 24, fontSize: 11 }} />
         <Bar
           dataKey="life"
           stackId="a"
