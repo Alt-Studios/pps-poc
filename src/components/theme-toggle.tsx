@@ -11,7 +11,7 @@ export function ThemeToggle() {
       variant="ghost"
       size="icon-sm"
       onClick={toggleTheme}
-      className="text-navy/60 dark:text-white/60 hover:text-navy dark:hover:text-white hover:bg-navy/10 dark:hover:bg-white/10 fixed top-3 right-3 sm:top-4 sm:right-4 z-10"
+      className="text-navy/60 dark:text-white/60 hover:text-navy dark:hover:text-white hover:bg-navy/10 dark:hover:bg-white/10"
     >
       {theme === 'dark' ? <Sun className="size-4" /> : <Moon className="size-4" />}
     </Button>

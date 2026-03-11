@@ -4,6 +4,7 @@ import AllocationPieChart from '@/components/pie-chart'
 import AllocationTiles from '@/components/allocation-tiles'
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
+import { ThemeToggle } from '@/components/theme-toggle'
 
 export default function MoreDetailsPage() {
   const { result, reset } = useCalculator()
@@ -22,7 +23,11 @@ export default function MoreDetailsPage() {
 
   return (
     <div className="bg-cream-light dark:bg-navy-dark">
-      <div className="mx-auto max-w-5xl px-4 py-8 sm:py-12">
+      <div className="mx-auto max-w-5xl px-4 py-12 sm:py-20">
+        <div className="flex justify-end mb-4">
+          <ThemeToggle />
+        </div>
+
         <h1 className="mb-6 sm:mb-8 text-center text-xl sm:text-2xl font-normal uppercase tracking-[0.04em] text-navy dark:text-white">
           Profit-Share Breakdown at Age 65
         </h1>

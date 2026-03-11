@@ -157,8 +157,7 @@ export function CalculatorForm() {
               type="button"
               onClick={() => setSpecifyOpen(true)}
               variant="outline"
-              size="lg"
-              className="ml-2 text-gold border-gold/40 hover:bg-gold/10 hover:text-gold uppercase tracking-wider text-xs shrink-0"
+              className="ml-2 h-10 px-3 text-gold border-gold/40 hover:bg-gold/10 hover:text-gold uppercase tracking-wider text-xs shrink-0"
             >
               Specify
             </Button>

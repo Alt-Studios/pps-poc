@@ -16,7 +16,7 @@ const rightLinks = [
 
 export function SiteHeader() {
   return (
-    <header className="bg-navy border-b border-white/10">
+    <header className="sticky top-0 z-50 bg-navy border-b border-white/10">
       <div className="mx-auto flex h-16 sm:h-20 items-center justify-between px-4 sm:px-8 lg:px-14">
         {/* Logo */}
         <Link to="/" className="shrink-0">
