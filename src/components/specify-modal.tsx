@@ -109,21 +109,21 @@ export function SpecifyModal({
         </div>
 
         {/* Form body */}
-        <div className="px-4 sm:px-6 pb-2 pt-1 space-y-3">
+        <div className="px-4 sm:px-6 pb-2 pt-1 space-y-3 overflow-hidden">
           {fields.map(({ label, value, setter }) => (
             <div key={label} className="group">
               <Label className="text-navy/60 dark:text-white/50 uppercase tracking-[0.12em] text-[10px] font-semibold mb-1">
                 {label}
               </Label>
-              <div className="flex">
-                <span className="bg-navy/5 dark:bg-white/5 backdrop-blur-sm text-navy/70 dark:text-white/70 font-semibold px-3 h-10 rounded-l-xl border border-r-0 border-navy/10 dark:border-white/10 text-sm flex items-center transition-colors group-focus-within:border-gold/30 dark:group-focus-within:border-gold/30">
+              <div className="flex min-w-0">
+                <span className="bg-navy/5 dark:bg-white/5 backdrop-blur-sm text-navy/70 dark:text-white/70 font-semibold px-3 h-10 rounded-l-xl border border-r-0 border-navy/10 dark:border-white/10 text-sm flex items-center shrink-0 transition-colors group-focus-within:border-gold/30 dark:group-focus-within:border-gold/30">
                   R
                 </span>
                 <Input
                   type="number"
                   min={0}
                   step="0.01"
-                  className="rounded-l-none rounded-r-xl bg-navy/[0.03] dark:bg-white/[0.03] text-navy dark:text-white border-navy/10 dark:border-white/10 placeholder:text-navy/30 dark:placeholder:text-white/30 focus:border-gold/40 dark:focus:border-gold/40 focus:ring-gold/10 transition-colors"
+                  className="min-w-0 rounded-l-none rounded-r-xl bg-navy/[0.03] dark:bg-white/[0.03] text-navy dark:text-white border-navy/10 dark:border-white/10 placeholder:text-navy/30 dark:placeholder:text-white/30 focus:border-gold/40 dark:focus:border-gold/40 focus:ring-gold/10 transition-colors"
                   value={value || ''}
                   onChange={(e) => setter(parseNum(e.target.value))}
                   placeholder="0.00"
@@ -134,11 +134,11 @@ export function SpecifyModal({
         </div>
 
         {/* Total bar - glass effect */}
-        <div className="mx-4 flex items-center justify-between rounded-xl bg-navy/[0.04] dark:bg-white/[0.06] backdrop-blur-sm px-4 py-3 ring-1 ring-navy/5 dark:ring-white/5">
-          <span className="text-navy/50 dark:text-white/50 uppercase tracking-[0.15em] text-[10px] font-semibold">
+        <div className="mx-4 flex items-center justify-between rounded-xl bg-navy/[0.04] dark:bg-white/[0.06] backdrop-blur-sm px-4 py-3 ring-1 ring-navy/5 dark:ring-white/5 min-w-0">
+          <span className="text-navy/50 dark:text-white/50 uppercase tracking-[0.15em] text-[10px] font-semibold shrink-0">
             Total Premium
           </span>
-          <span className="text-navy dark:text-white font-bold text-lg tabular-nums">
+          <span className="text-navy dark:text-white font-bold text-lg tabular-nums truncate ml-3">
             R {total.toLocaleString('en-ZA', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
           </span>
         </div>
