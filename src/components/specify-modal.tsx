@@ -49,6 +49,17 @@ export function SpecifyModal({
 
   const total = lifePremium + disabilityPremium + criticalIllnessPremium + incomeProtectionPremium
 
+  function formatTotal(value: number): string {
+    if (value >= 1_000_000_000) {
+      return 'R ' + (value / 1_000_000_000).toFixed(2) + 'B'
+    }
+    if (value >= 1_000_000) {
+      return 'R ' + (value / 1_000_000).toFixed(2) + 'M'
+    }
+    // Replace non-breaking spaces from en-ZA locale with regular spaces
+    return 'R ' + value.toLocaleString('en-ZA', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).replace(/\u00A0/g, ' ')
+  }
+
   function handleDone() {
     onDone({
       lifePremium,
@@ -134,13 +145,15 @@ export function SpecifyModal({
         </div>
 
         {/* Total bar - glass effect */}
-        <div className="mx-4 flex items-center justify-between rounded-xl bg-navy/[0.04] dark:bg-white/[0.06] backdrop-blur-sm px-4 py-3 ring-1 ring-navy/5 dark:ring-white/5 min-w-0">
-          <span className="text-navy/50 dark:text-white/50 uppercase tracking-[0.15em] text-[10px] font-semibold shrink-0">
-            Total Premium
-          </span>
-          <span className={`text-navy dark:text-white font-bold tabular-nums ml-3 ${total >= 1_000_000 ? 'text-sm' : total >= 100_000 ? 'text-base' : 'text-lg'}`}>
-            R {total.toLocaleString('en-ZA', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
-          </span>
+        <div className="mx-4 rounded-xl bg-navy/[0.04] dark:bg-white/[0.06] backdrop-blur-sm px-4 py-3 ring-1 ring-navy/5 dark:ring-white/5">
+          <div className="flex items-baseline justify-between gap-3">
+            <span className="text-navy/50 dark:text-white/50 uppercase tracking-[0.15em] text-[10px] font-semibold shrink-0">
+              Total Premium
+            </span>
+            <span className="text-navy dark:text-white font-semibold tabular-nums text-sm text-right">
+              {formatTotal(total)}
+            </span>
+          </div>
         </div>
 
         {/* Footer */}
