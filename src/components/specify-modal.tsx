@@ -138,7 +138,7 @@ export function SpecifyModal({
           <span className="text-navy/50 dark:text-white/50 uppercase tracking-[0.15em] text-[10px] font-semibold shrink-0">
             Total Premium
           </span>
-          <span className="text-navy dark:text-white font-bold text-lg tabular-nums truncate ml-3">
+          <span className={`text-navy dark:text-white font-bold tabular-nums ml-3 ${total >= 1_000_000 ? 'text-sm' : total >= 100_000 ? 'text-base' : 'text-lg'}`}>
             R {total.toLocaleString('en-ZA', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
           </span>
         </div>
