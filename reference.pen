@@ -1,0 +1,1434 @@
+{
+  "version": "2.8",
+  "children": [
+    {
+      "type": "frame",
+      "id": "MA2HP",
+      "x": 4794,
+      "y": 575,
+      "name": "Glass nav",
+      "width": 1920,
+      "height": 100,
+      "stroke": {
+        "align": "inside",
+        "thickness": 1
+      },
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "fmP90",
+          "x": 0,
+          "y": 0,
+          "name": "Glass",
+          "clip": true,
+          "width": 1920,
+          "height": 100,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1
+          },
+          "layout": "none"
+        },
+        {
+          "type": "frame",
+          "id": "Sk0Qr",
+          "x": 0,
+          "y": 0,
+          "name": "Nav",
+          "width": 1920,
+          "height": 100,
+          "fill": {
+            "type": "color",
+            "color": "#ffffffff",
+            "enabled": false
+          },
+          "stroke": {
+            "align": "outside",
+            "thickness": {
+              "bottom": 1
+            }
+          },
+          "layout": "vertical",
+          "gap": 10,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "YStOz",
+              "name": "Top nav",
+              "clip": true,
+              "width": 1920,
+              "height": 100,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "PddO9",
+                  "x": 216,
+                  "y": 12,
+                  "name": "Logo",
+                  "width": 76,
+                  "height": 76,
+                  "cornerRadius": 6.909090518951416,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 0.863636314868927
+                  },
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "3g6SR",
+                      "x": 1,
+                      "y": -2,
+                      "name": "PPS New Logo_For Professionals White 1",
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "",
+                        "mode": "stretch"
+                      },
+                      "width": 74,
+                      "height": 79,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 0.15833333134651184
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "hxe8v",
+                  "x": 627.5,
+                  "y": 38,
+                  "name": "Centre nav",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1
+                  },
+                  "gap": 32,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "kUltr",
+                      "name": "Membership - closed",
+                      "height": 24,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": {
+                          "bottom": 1
+                        },
+                        "fill": {
+                          "type": "color",
+                          "color": "#000000ff",
+                          "enabled": false
+                        }
+                      },
+                      "gap": 8,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "EVqm9",
+                          "name": "Membership",
+                          "fill": "#ffffffff",
+                          "content": "Membership",
+                          "lineHeight": 1.399999976158142,
+                          "textAlignVertical": "middle",
+                          "fontFamily": "Gotham",
+                          "fontSize": 16,
+                          "fontWeight": "normal",
+                          "letterSpacing": 0.64
+                        },
+                        {
+                          "type": "frame",
+                          "id": "qdjUC",
+                          "name": "chevron-down",
+                          "enabled": false,
+                          "clip": true,
+                          "width": 12,
+                          "height": 12,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 0.75
+                          },
+                          "layout": "none",
+                          "children": [
+                            {
+                              "type": "path",
+                              "id": "PQENT",
+                              "x": 1.125,
+                              "y": 3.3017578125,
+                              "name": "Vector",
+                              "geometry": "M0.11017 0.11017c0.03483-0.03492 0.07622-0.06263 0.12178-0.08153 0.04556-0.0189 0.0944-0.02864 0.14372-0.02864 0.04933 0 0.09817 0.00973 0.14373 0.02864 0.04556 0.0189 0.08694 0.04661 0.12177 0.08153l4.2345 4.23525 4.2345-4.23525c0.03487-0.03487 0.07626-0.06252 0.12181-0.08139 0.04555-0.01887 0.09438-0.02858 0.14369-0.02858 0.04931 0 0.09813 0.00971 0.14369 0.02858 0.04555 0.01887 0.08695 0.04653 0.12181 0.08139 0.03487 0.03487 0.06252 0.07626 0.08139 0.12181 0.01887 0.04555 0.02858 0.09438 0.02858 0.14369 0 0.04931-0.00971 0.09813-0.02858 0.14369-0.01887 0.04555-0.04653 0.08695-0.08139 0.12181l-4.5 4.5c-0.03483 0.03492-0.07622 0.06263-0.12178 0.08153-0.04556 0.0189-0.0944 0.02864-0.14372 0.02864-0.04933 0-0.09817-0.00973-0.14372-0.02864-0.04556-0.0189-0.08694-0.04661-0.12178-0.08153l-4.5-4.5c-0.03492-0.03483-0.06263-0.07622-0.08153-0.12177-0.0189-0.04556-0.02864-0.0944-0.02864-0.14373 0-0.04933 0.00973-0.09817 0.02864-0.14373 0.0189-0.04556 0.04661-0.08694 0.08153-0.12177l0 0z",
+                              "fillRule": "evenodd",
+                              "fill": "#ffffffff",
+                              "width": 9.751143455505371,
+                              "height": 5.251339912414551,
+                              "stroke": {
+                                "align": "center",
+                                "thickness": 0.5,
+                                "fill": "#ffffffff"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dojqS",
+                      "name": "Solutions - closed",
+                      "height": 24,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": {
+                          "bottom": 1
+                        },
+                        "fill": {
+                          "type": "color",
+                          "color": "#000000ff",
+                          "enabled": false
+                        }
+                      },
+                      "gap": 8,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "SyvlL",
+                          "name": "Solutions",
+                          "fill": "#ffffffff",
+                          "content": "Solutions",
+                          "lineHeight": 1.399999976158142,
+                          "textAlignVertical": "middle",
+                          "fontFamily": "Gotham",
+                          "fontSize": 16,
+                          "fontWeight": "normal",
+                          "letterSpacing": 0.64
+                        },
+                        {
+                          "type": "frame",
+                          "id": "7ySEd",
+                          "name": "chevron-down",
+                          "enabled": false,
+                          "clip": true,
+                          "width": 12,
+                          "height": 12,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 0.75
+                          },
+                          "layout": "none",
+                          "children": [
+                            {
+                              "type": "path",
+                              "id": "rnrEs",
+                              "x": 1.125,
+                              "y": 3.3017578125,
+                              "name": "Vector",
+                              "geometry": "M0.11017 0.11017c0.03483-0.03492 0.07622-0.06263 0.12178-0.08153 0.04556-0.0189 0.0944-0.02864 0.14372-0.02864 0.04933 0 0.09817 0.00973 0.14373 0.02864 0.04556 0.0189 0.08694 0.04661 0.12177 0.08153l4.2345 4.23525 4.2345-4.23525c0.03487-0.03487 0.07626-0.06252 0.12181-0.08139 0.04555-0.01887 0.09438-0.02858 0.14369-0.02858 0.04931 0 0.09813 0.00971 0.14369 0.02858 0.04555 0.01887 0.08695 0.04653 0.12181 0.08139 0.03487 0.03487 0.06252 0.07626 0.08139 0.12181 0.01887 0.04555 0.02858 0.09438 0.02858 0.14369 0 0.04931-0.00971 0.09813-0.02858 0.14369-0.01887 0.04555-0.04653 0.08695-0.08139 0.12181l-4.5 4.5c-0.03483 0.03492-0.07622 0.06263-0.12178 0.08153-0.04556 0.0189-0.0944 0.02864-0.14372 0.02864-0.04933 0-0.09817-0.00973-0.14372-0.02864-0.04556-0.0189-0.08694-0.04661-0.12178-0.08153l-4.5-4.5c-0.03492-0.03483-0.06263-0.07622-0.08153-0.12177-0.0189-0.04556-0.02864-0.0944-0.02864-0.14373 0-0.04933 0.00973-0.09817 0.02864-0.14373 0.0189-0.04556 0.04661-0.08694 0.08153-0.12177l0 0z",
+                              "fillRule": "evenodd",
+                              "fill": "#ffffffff",
+                              "width": 9.751143455505371,
+                              "height": 5.251339912414551,
+                              "stroke": {
+                                "align": "center",
+                                "thickness": 0.5,
+                                "fill": "#ffffffff"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "gfD1a",
+                      "name": "Insights - closed",
+                      "height": 24,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": {
+                          "bottom": 1
+                        },
+                        "fill": {
+                          "type": "color",
+                          "color": "#000000ff",
+                          "enabled": false
+                        }
+                      },
+                      "gap": 8,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "8mAsl",
+                          "name": "Insights",
+                          "fill": "#ffffffff",
+                          "content": "Insights",
+                          "lineHeight": 1.399999976158142,
+                          "textAlignVertical": "middle",
+                          "fontFamily": "Gotham",
+                          "fontSize": 16,
+                          "fontWeight": "normal",
+                          "letterSpacing": 0.64
+                        },
+                        {
+                          "type": "frame",
+                          "id": "nKB4u",
+                          "name": "chevron-down",
+                          "enabled": false,
+                          "clip": true,
+                          "width": 12,
+                          "height": 12,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 0.75
+                          },
+                          "layout": "none",
+                          "children": [
+                            {
+                              "type": "path",
+                              "id": "Bav4z",
+                              "x": 1.125,
+                              "y": 3.3017578125,
+                              "name": "Vector",
+                              "geometry": "M0.11017 0.11017c0.03483-0.03492 0.07622-0.06263 0.12178-0.08153 0.04556-0.0189 0.0944-0.02864 0.14372-0.02864 0.04933 0 0.09817 0.00973 0.14373 0.02864 0.04556 0.0189 0.08694 0.04661 0.12177 0.08153l4.2345 4.23525 4.2345-4.23525c0.03487-0.03487 0.07626-0.06252 0.12181-0.08139 0.04555-0.01887 0.09438-0.02858 0.14369-0.02858 0.04931 0 0.09813 0.00971 0.14369 0.02858 0.04555 0.01887 0.08695 0.04653 0.12181 0.08139 0.03487 0.03487 0.06252 0.07626 0.08139 0.12181 0.01887 0.04555 0.02858 0.09438 0.02858 0.14369 0 0.04931-0.00971 0.09813-0.02858 0.14369-0.01887 0.04555-0.04653 0.08695-0.08139 0.12181l-4.5 4.5c-0.03483 0.03492-0.07622 0.06263-0.12178 0.08153-0.04556 0.0189-0.0944 0.02864-0.14372 0.02864-0.04933 0-0.09817-0.00973-0.14372-0.02864-0.04556-0.0189-0.08694-0.04661-0.12178-0.08153l-4.5-4.5c-0.03492-0.03483-0.06263-0.07622-0.08153-0.12177-0.0189-0.04556-0.02864-0.0944-0.02864-0.14373 0-0.04933 0.00973-0.09817 0.02864-0.14373 0.0189-0.04556 0.04661-0.08694 0.08153-0.12177l0 0z",
+                              "fillRule": "evenodd",
+                              "fill": "#ffffffff",
+                              "width": 9.751143455505371,
+                              "height": 5.251339912414551,
+                              "stroke": {
+                                "align": "center",
+                                "thickness": 0.5,
+                                "fill": "#ffffffff"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "AwgO6",
+                      "name": "About PPS - closed",
+                      "height": 24,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": {
+                          "bottom": 1
+                        },
+                        "fill": {
+                          "type": "color",
+                          "color": "#000000ff",
+                          "enabled": false
+                        }
+                      },
+                      "gap": 8,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "JwD2F",
+                          "name": "About PPS",
+                          "fill": "#ffffffff",
+                          "content": "About PPS",
+                          "lineHeight": 1.399999976158142,
+                          "textAlignVertical": "middle",
+                          "fontFamily": "Gotham",
+                          "fontSize": 16,
+                          "fontWeight": "normal",
+                          "letterSpacing": 0.64
+                        },
+                        {
+                          "type": "frame",
+                          "id": "So0Eq",
+                          "name": "chevron-down",
+                          "enabled": false,
+                          "clip": true,
+                          "width": 12,
+                          "height": 12,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 0.75
+                          },
+                          "layout": "none",
+                          "children": [
+                            {
+                              "type": "path",
+                              "id": "p9yDR",
+                              "x": 1.125,
+                              "y": 3.3017578125,
+                              "name": "Vector",
+                              "geometry": "M0.11017 0.11017c0.03483-0.03492 0.07622-0.06263 0.12178-0.08153 0.04556-0.0189 0.0944-0.02864 0.14372-0.02864 0.04933 0 0.09817 0.00973 0.14373 0.02864 0.04556 0.0189 0.08694 0.04661 0.12177 0.08153l4.2345 4.23525 4.2345-4.23525c0.03487-0.03487 0.07626-0.06252 0.12181-0.08139 0.04555-0.01887 0.09438-0.02858 0.14369-0.02858 0.04931 0 0.09813 0.00971 0.14369 0.02858 0.04555 0.01887 0.08695 0.04653 0.12181 0.08139 0.03487 0.03487 0.06252 0.07626 0.08139 0.12181 0.01887 0.04555 0.02858 0.09438 0.02858 0.14369 0 0.04931-0.00971 0.09813-0.02858 0.14369-0.01887 0.04555-0.04653 0.08695-0.08139 0.12181l-4.5 4.5c-0.03483 0.03492-0.07622 0.06263-0.12178 0.08153-0.04556 0.0189-0.0944 0.02864-0.14372 0.02864-0.04933 0-0.09817-0.00973-0.14372-0.02864-0.04556-0.0189-0.08694-0.04661-0.12178-0.08153l-4.5-4.5c-0.03492-0.03483-0.06263-0.07622-0.08153-0.12177-0.0189-0.04556-0.02864-0.0944-0.02864-0.14373 0-0.04933 0.00973-0.09817 0.02864-0.14373 0.0189-0.04556 0.04661-0.08694 0.08153-0.12177l0 0z",
+                              "fillRule": "evenodd",
+                              "fill": "#ffffffff",
+                              "width": 9.751143455505371,
+                              "height": 5.251339912414551,
+                              "stroke": {
+                                "align": "center",
+                                "thickness": 0.5,
+                                "fill": "#ffffffff"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tiu83",
+                      "name": "Get Advice - closed",
+                      "height": 24,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": {
+                          "bottom": 1
+                        },
+                        "fill": {
+                          "type": "color",
+                          "color": "#000000ff",
+                          "enabled": false
+                        }
+                      },
+                      "gap": 10,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "t5dtK",
+                          "name": "Get Advice",
+                          "fill": "#ffffffff",
+                          "content": "Get Advice",
+                          "lineHeight": 1.399999976158142,
+                          "textAlignVertical": "middle",
+                          "fontFamily": "Gotham",
+                          "fontSize": 16,
+                          "fontWeight": "normal",
+                          "letterSpacing": 0.64
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "4TZ5z",
+                      "name": "Support - closed",
+                      "height": 24,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": {
+                          "bottom": 1
+                        },
+                        "fill": {
+                          "type": "color",
+                          "color": "#000000ff",
+                          "enabled": false
+                        }
+                      },
+                      "gap": 10,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "dxOz5",
+                          "name": "Support",
+                          "fill": "#ffffffff",
+                          "content": "Support",
+                          "lineHeight": 1.399999976158142,
+                          "textAlignVertical": "middle",
+                          "fontFamily": "Gotham",
+                          "fontSize": 16,
+                          "fontWeight": "normal",
+                          "letterSpacing": 0.64
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "kF2W3",
+                  "x": 1509,
+                  "y": 38,
+                  "name": "Right nav",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1
+                  },
+                  "gap": 24,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ldnMr",
+                      "name": "Search",
+                      "clip": true,
+                      "width": 24,
+                      "height": 24,
+                      "fill": {
+                        "type": "color",
+                        "color": "#ffffffff",
+                        "enabled": false
+                      },
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1
+                      },
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "path",
+                          "id": "RRvzS",
+                          "x": 3.8077497482299805,
+                          "y": 3.7692503929138184,
+                          "name": "Vector",
+                          "geometry": "M627.07001 655.38l-250.46002-250.46002c-20 17.02668-42.99997 30.20667-68.99997 39.54001-26 9.33334-52.12668 14-78.38001 14-64.06666 0-118.29001-22.17666-162.67001-66.53-44.37333-44.35333-66.56-98.54333-66.56-162.57 0-64.03333 22.17667-118.27002 66.53-162.71003 44.35333-44.43333 98.54333-66.64996 162.57001-66.64996 64.03332 0 118.26999 22.18667 162.70999 66.56 44.43335 44.38 66.65002 98.60331 66.65002 162.66998 0 27.79334-4.92334 54.69-14.77002 80.69-9.84668 26-22.77002 48.23001-38.77002 66.69001l250.46002 250.46997-28.30999 28.30004z m-397.84-236.92001c53.07333 0 97.88001-18.26999 134.42001-54.81 36.54001-36.53332 54.81-81.33999 54.81-134.42001 0-53.08-18.26999-97.88666-54.81-134.41998-36.54-36.54-81.34668-54.81-134.42001-54.81-53.08 0-97.88669 18.27-134.42001 54.81-36.54 36.53332-54.81 81.33998-54.81 134.41998 0 53.08002 18.27 97.88669 54.81 134.42001 36.53332 36.54001 81.34001 54.81 134.42001 54.81z",
+                          "fill": "#ffffffff",
+                          "width": 16.38450050354004,
+                          "height": 16.38450050354004,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 0.02500000037252903
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "eUu2H",
+                      "name": "Locations - closed",
+                      "height": 24,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": {
+                          "bottom": 1
+                        },
+                        "fill": {
+                          "type": "color",
+                          "color": "#000000ff",
+                          "enabled": false
+                        }
+                      },
+                      "gap": 10,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ZLCvi",
+                          "name": "Login",
+                          "fill": "#ffffffff",
+                          "content": "Login",
+                          "lineHeight": 1.399999976158142,
+                          "textAlignVertical": "middle",
+                          "fontFamily": "Gotham",
+                          "fontSize": 16,
+                          "fontWeight": "normal",
+                          "letterSpacing": 0.64
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "2qhOs",
+                      "name": "Our impact - closed",
+                      "height": 24,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": {
+                          "bottom": 1
+                        },
+                        "fill": {
+                          "type": "color",
+                          "color": "#000000ff",
+                          "enabled": false
+                        }
+                      },
+                      "gap": 10,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "MgYmb",
+                          "name": "Join PPS",
+                          "fill": "#ffffffff",
+                          "content": "Join PPS",
+                          "lineHeight": 1.399999976158142,
+                          "textAlignVertical": "middle",
+                          "fontFamily": "Gotham",
+                          "fontSize": 16,
+                          "fontWeight": "normal",
+                          "letterSpacing": 0.64
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "tMUuF",
+      "x": 4793.514312649597,
+      "y": 972.2374214304728,
+      "name": "Footer",
+      "clip": true,
+      "width": 1920,
+      "height": 1017,
+      "fill": "#091e35ff",
+      "stroke": {
+        "align": "inside",
+        "thickness": 1
+      },
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "y997c",
+          "x": 0,
+          "y": 0,
+          "name": "Pattern",
+          "opacity": 0.30000001192092896,
+          "width": 1920,
+          "height": 944,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "",
+            "mode": "fill"
+          },
+          "stroke": {
+            "align": "inside",
+            "thickness": 1
+          },
+          "layout": "none"
+        },
+        {
+          "type": "frame",
+          "id": "jkH5H",
+          "x": 0,
+          "y": 120,
+          "name": "Content",
+          "width": 1920,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1
+          },
+          "layout": "vertical",
+          "gap": 80,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Dld7e",
+              "name": "Logo + links",
+              "width": 1488,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "gap": 412,
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "hIq01",
+                  "name": "Right content",
+                  "enabled": false,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1
+                  },
+                  "layout": "vertical",
+                  "gap": 80,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "hDrCr",
+                      "name": "Logo",
+                      "width": 100,
+                      "height": 100,
+                      "cornerRadius": 9.09090805053711,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1.1363635063171387
+                      },
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "rVxVB",
+                          "x": 1.3157894611358643,
+                          "y": -2.6315789222717285,
+                          "name": "PPS New Logo_For Professionals White 1",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "",
+                            "mode": "stretch"
+                          },
+                          "width": 97.36842346191406,
+                          "height": 103.9473648071289,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 0.2083333283662796
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ZHP8k",
+                  "name": "Right content",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 2.222222089767456
+                  },
+                  "layout": "vertical",
+                  "gap": 177.77777099609375,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "o8bri",
+                      "name": "PPS New Logo_For Professionals White 1",
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "",
+                        "mode": "stretch"
+                      },
+                      "width": 215.55555725097656,
+                      "height": 200,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 0.46296292543411255
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "H4SIe",
+                  "name": "Links",
+                  "width": 976,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1
+                  },
+                  "gap": 160,
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "VrTso",
+                      "name": "Membership",
+                      "width": "fit_content(181)",
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1
+                      },
+                      "layout": "vertical",
+                      "gap": 32,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "s9gyX",
+                          "name": "Menu items",
+                          "width": "fill_container",
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1
+                          },
+                          "layout": "vertical",
+                          "gap": 24,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "d3eg8",
+                              "name": "Membership",
+                              "fill": "#b09555ff",
+                              "content": "Membership",
+                              "lineHeight": 1.399999976158142,
+                              "textAlignVertical": "middle",
+                              "fontFamily": "Gotham",
+                              "fontSize": 16,
+                              "fontWeight": "normal",
+                              "letterSpacing": 0.64
+                            },
+                            {
+                              "type": "text",
+                              "id": "ISK8O",
+                              "name": "The PPS Difference",
+                              "fill": "#ffffffff",
+                              "content": "The PPS Difference",
+                              "lineHeight": 1.399999976158142,
+                              "textAlignVertical": "middle",
+                              "fontFamily": "Gotham",
+                              "fontSize": 14,
+                              "fontWeight": "normal",
+                              "letterSpacing": 0.56
+                            },
+                            {
+                              "type": "text",
+                              "id": "cgGJW",
+                              "name": "Profit-Share Account™",
+                              "fill": "#ffffffff",
+                              "content": "Profit-Share Account™",
+                              "lineHeight": 1.399999976158142,
+                              "textAlignVertical": "middle",
+                              "fontFamily": "Gotham",
+                              "fontSize": 14,
+                              "fontWeight": "normal",
+                              "letterSpacing": 0.56
+                            },
+                            {
+                              "type": "text",
+                              "id": "xgrO8",
+                              "name": "How Membership Works",
+                              "fill": "#ffffffff",
+                              "content": "How Membership Works",
+                              "lineHeight": 1.399999976158142,
+                              "textAlignVertical": "middle",
+                              "fontFamily": "Gotham",
+                              "fontSize": 14,
+                              "fontWeight": "normal",
+                              "letterSpacing": 0.56
+                            },
+                            {
+                              "type": "text",
+                              "id": "NUW33",
+                              "name": "Eligibility",
+                              "fill": "#ffffffff",
+                              "content": "Eligibility",
+                              "lineHeight": 1.399999976158142,
+                              "textAlignVertical": "middle",
+                              "fontFamily": "Gotham",
+                              "fontSize": 14,
+                              "fontWeight": "normal",
+                              "letterSpacing": 0.56
+                            },
+                            {
+                              "type": "text",
+                              "id": "kmkxP",
+                              "name": "Member Stories",
+                              "fill": "#ffffffff",
+                              "content": "Member Stories",
+                              "lineHeight": 1.399999976158142,
+                              "textAlignVertical": "middle",
+                              "fontFamily": "Gotham",
+                              "fontSize": 14,
+                              "fontWeight": "normal",
+                              "letterSpacing": 0.56
+                            },
+                            {
+                              "type": "text",
+                              "id": "gh6p0",
+                              "name": "PPS Foundation",
+                              "fill": "#ffffffff",
+                              "content": "PPS Foundation",
+                              "lineHeight": 1.399999976158142,
+                              "textAlignVertical": "middle",
+                              "fontFamily": "Gotham",
+                              "fontSize": 14,
+                              "fontWeight": "normal",
+                              "letterSpacing": 0.56
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "9je4k",
+                      "name": "Solutions",
+                      "width": "fit_content(163)",
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1
+                      },
+                      "layout": "vertical",
+                      "gap": 24,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "lsCTd",
+                          "name": "Menu items",
+                          "width": "fill_container",
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1
+                          },
+                          "layout": "vertical",
+                          "gap": 24,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "SRe0O",
+                              "name": "Solutions",
+                              "fill": "#b09555ff",
+                              "content": "Solutions",
+                              "lineHeight": 1.399999976158142,
+                              "textAlignVertical": "middle",
+                              "fontFamily": "Gotham",
+                              "fontSize": 16,
+                              "fontWeight": "normal",
+                              "letterSpacing": 0.64
+                            },
+                            {
+                              "type": "text",
+                              "id": "0oqRo",
+                              "name": "Protect My Income",
+                              "fill": "#ffffffff",
+                              "content": "Protect My Income",
+                              "lineHeight": 1.399999976158142,
+                              "textAlignVertical": "middle",
+                              "fontFamily": "Gotham",
+                              "fontSize": 14,
+                              "fontWeight": "normal",
+                              "letterSpacing": 0.56
+                            },
+                            {
+                              "type": "text",
+                              "id": "G78Ie",
+                              "name": "Grow My Wealth",
+                              "fill": "#ffffffff",
+                              "content": "Grow My Wealth",
+                              "lineHeight": 1.399999976158142,
+                              "textAlignVertical": "middle",
+                              "fontFamily": "Gotham",
+                              "fontSize": 14,
+                              "fontWeight": "normal",
+                              "letterSpacing": 0.56
+                            },
+                            {
+                              "type": "text",
+                              "id": "DSfqB",
+                              "name": "Protect My Assets",
+                              "fill": "#ffffffff",
+                              "content": "Protect My Assets",
+                              "lineHeight": 1.399999976158142,
+                              "textAlignVertical": "middle",
+                              "fontFamily": "Gotham",
+                              "fontSize": 14,
+                              "fontWeight": "normal",
+                              "letterSpacing": 0.56
+                            },
+                            {
+                              "type": "text",
+                              "id": "1bNwU",
+                              "name": "Protect My Business",
+                              "fill": "#ffffffff",
+                              "content": "Protect My Business",
+                              "lineHeight": 1.399999976158142,
+                              "textAlignVertical": "middle",
+                              "fontFamily": "Gotham",
+                              "fontSize": 14,
+                              "fontWeight": "normal",
+                              "letterSpacing": 0.56
+                            },
+                            {
+                              "type": "text",
+                              "id": "gCNE8",
+                              "name": "Plan My Estate",
+                              "fill": "#ffffffff",
+                              "content": "Plan My Estate",
+                              "lineHeight": 1.399999976158142,
+                              "textAlignVertical": "middle",
+                              "fontFamily": "Gotham",
+                              "fontSize": 14,
+                              "fontWeight": "normal",
+                              "letterSpacing": 0.56
+                            },
+                            {
+                              "type": "text",
+                              "id": "JtaKB",
+                              "name": "Explore by Profession",
+                              "fill": "#ffffffff",
+                              "content": "Explore by Profession",
+                              "lineHeight": 1.399999976158142,
+                              "textAlignVertical": "middle",
+                              "fontFamily": "Gotham",
+                              "fontSize": 14,
+                              "fontWeight": "normal",
+                              "letterSpacing": 0.56
+                            },
+                            {
+                              "type": "text",
+                              "id": "208NP",
+                              "name": "Explore by Life Stage",
+                              "fill": "#ffffffff",
+                              "content": "Explore by Life Stage",
+                              "lineHeight": 1.399999976158142,
+                              "textAlignVertical": "middle",
+                              "fontFamily": "Gotham",
+                              "fontSize": 14,
+                              "fontWeight": "normal",
+                              "letterSpacing": 0.56
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "DPPS9",
+                      "name": "Company + support",
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1
+                      },
+                      "layout": "vertical",
+                      "gap": 96,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "HjfEh",
+                          "name": "Frame 12634",
+                          "width": "fit_content(145)",
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1
+                          },
+                          "layout": "vertical",
+                          "gap": 48,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "1PFMP",
+                              "name": "Menu items",
+                              "width": "fill_container",
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": 1
+                              },
+                              "layout": "vertical",
+                              "gap": 24,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "VdcFO",
+                                  "name": "About & Support",
+                                  "fill": "#b09555ff",
+                                  "content": "About & Support",
+                                  "lineHeight": 1.399999976158142,
+                                  "textAlignVertical": "middle",
+                                  "fontFamily": "Gotham",
+                                  "fontSize": 16,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": 0.64
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "Bz5Zo",
+                                  "name": "Our Story",
+                                  "fill": "#ffffffff",
+                                  "content": "Our Story",
+                                  "lineHeight": 1.399999976158142,
+                                  "textAlignVertical": "middle",
+                                  "fontFamily": "Gotham",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": 0.56
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "bKdqj",
+                                  "name": "Leadership",
+                                  "fill": "#ffffffff",
+                                  "content": "Leadership",
+                                  "lineHeight": 1.399999976158142,
+                                  "textAlignVertical": "middle",
+                                  "fontFamily": "Gotham",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": 0.56
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "OZ7DX",
+                                  "name": "Sustainability",
+                                  "fill": "#ffffffff",
+                                  "content": "Sustainability",
+                                  "lineHeight": 1.399999976158142,
+                                  "textAlignVertical": "middle",
+                                  "fontFamily": "Gotham",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": 0.56
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "xXVLr",
+                                  "name": "Careers",
+                                  "fill": "#ffffffff",
+                                  "content": "Careers",
+                                  "lineHeight": 1.399999976158142,
+                                  "textAlignVertical": "middle",
+                                  "fontFamily": "Gotham",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": 0.56
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "YA7GU",
+                                  "name": "Media",
+                                  "enabled": false,
+                                  "fill": "#ffffffff",
+                                  "content": "Media",
+                                  "lineHeight": 1,
+                                  "textAlignVertical": "middle",
+                                  "fontFamily": "Gotham",
+                                  "fontSize": 16,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": 0.64
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "xcXUD",
+                                  "name": "Find an Adviser",
+                                  "fill": "#ffffffff",
+                                  "content": "Find an Adviser",
+                                  "lineHeight": 1.399999976158142,
+                                  "textAlignVertical": "middle",
+                                  "fontFamily": "Gotham",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": 0.56
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "8fFWT",
+                                  "name": "Submit Claim",
+                                  "fill": "#ffffffff",
+                                  "content": "Submit Claim",
+                                  "lineHeight": 1.399999976158142,
+                                  "textAlignVertical": "middle",
+                                  "fontFamily": "Gotham",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": 0.56
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "cqNS1",
+                                  "name": "Track Claim",
+                                  "fill": "#ffffffff",
+                                  "content": "Track Claim",
+                                  "lineHeight": 1.399999976158142,
+                                  "textAlignVertical": "middle",
+                                  "fontFamily": "Gotham",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": 0.56
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "xtPlJ",
+                                  "name": "Member Login",
+                                  "fill": "#ffffffff",
+                                  "content": "Member Login",
+                                  "lineHeight": 1.399999976158142,
+                                  "textAlignVertical": "middle",
+                                  "fontFamily": "Gotham",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": 0.56
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "8q7kQ",
+                                  "name": "Contact Us",
+                                  "fill": "#ffffffff",
+                                  "content": "Contact Us",
+                                  "lineHeight": 1.399999976158142,
+                                  "textAlignVertical": "middle",
+                                  "fontFamily": "Gotham",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": 0.56
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "VWPQH",
+                                  "name": "FAQs",
+                                  "fill": "#ffffffff",
+                                  "content": "FAQs",
+                                  "lineHeight": 1.399999976158142,
+                                  "textAlignVertical": "middle",
+                                  "fontFamily": "Gotham",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": 0.56
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "line",
+              "id": "KPOqO",
+              "name": "Line 15",
+              "opacity": 0.4000000059604645,
+              "width": 1488,
+              "height": 0,
+              "stroke": {
+                "align": "center",
+                "thickness": 0.5,
+                "fill": "#efeeeeff"
+              }
+            },
+            {
+              "type": "frame",
+              "id": "C06kq",
+              "name": "Newsletter",
+              "width": 1488,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "gap": 64,
+              "padding": [
+                0,
+                0,
+                40,
+                0
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "end",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "cuAXr",
+                  "name": "Text",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1
+                  },
+                  "layout": "vertical",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "8OXcd",
+                      "name": "Sign up to our newsletter",
+                      "fill": "#b09555ff",
+                      "content": "Sign up to our newsletter",
+                      "lineHeight": 1.2000000476837158,
+                      "textAlignVertical": "middle",
+                      "fontFamily": "Gotham",
+                      "fontSize": 32,
+                      "fontWeight": "normal",
+                      "letterSpacing": 0.64
+                    },
+                    {
+                      "type": "text",
+                      "id": "25HGs",
+                      "name": "Stay informed, get the latest financial insights and updates from PPS.",
+                      "fill": "#ffffffff",
+                      "content": "Stay informed, get the latest financial insights and updates from PPS.",
+                      "lineHeight": 1.399999976158142,
+                      "textAlignVertical": "middle",
+                      "fontFamily": "Gotham",
+                      "fontSize": 14,
+                      "fontWeight": "normal",
+                      "letterSpacing": 0.56
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "DDxax",
+                  "name": "CTAs",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1
+                  },
+                  "gap": 32,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "JvkQo",
+                      "name": "Input",
+                      "clip": true,
+                      "width": 280,
+                      "height": 48,
+                      "fill": "#091e35ff",
+                      "cornerRadius": 80,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#ffffffff"
+                      },
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ox9La",
+                          "x": 20,
+                          "y": 14,
+                          "name": "Your email",
+                          "opacity": 0.30000001192092896,
+                          "fill": "#ffffffff",
+                          "content": "Your email",
+                          "lineHeight": 1.399999976158142,
+                          "textAlignVertical": "middle",
+                          "fontFamily": "Gotham",
+                          "fontSize": 14,
+                          "fontWeight": "normal",
+                          "letterSpacing": 0.56
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "RhktR",
+                      "name": "Buttons",
+                      "width": 180,
+                      "height": 48,
+                      "fill": {
+                        "type": "color",
+                        "color": "#ffffffff",
+                        "enabled": false
+                      },
+                      "cornerRadius": 80,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1
+                      },
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "#ffffff66",
+                        "blur": 17.5
+                      },
+                      "gap": 8,
+                      "padding": [
+                        16,
+                        24
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "wGc4I",
+                          "name": "Join PPS",
+                          "fill": "#ffffffff",
+                          "content": "Subscribe",
+                          "lineHeight": 1.399999976158142,
+                          "textAlignVertical": "middle",
+                          "fontFamily": "Gotham",
+                          "fontSize": 14,
+                          "fontWeight": "normal",
+                          "letterSpacing": 0.56
+                        },
+                        {
+                          "type": "frame",
+                          "id": "vWznn",
+                          "name": "arrow_forward_24dp_E3E3E3_FILL0_wght200_GRAD0_opsz24 2",
+                          "enabled": false,
+                          "clip": true,
+                          "width": 20,
+                          "height": 20,
+                          "fill": {
+                            "type": "color",
+                            "color": "#ffffffff",
+                            "enabled": false
+                          },
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 0.8333333134651184
+                          },
+                          "layout": "none",
+                          "children": [
+                            {
+                              "type": "path",
+                              "id": "ZKhN3",
+                              "x": 4.166666507720947,
+                              "y": 4.166666507720947,
+                              "name": "Vector",
+                              "rotation": 3.1805546814635168e-15,
+                              "geometry": "M483.15002 300l-483.15002 0 0-40 483.15002 0-231.69003-231.69 28.54001-28.31 280 280-280 280-28.54001-28.31 231.69003-231.69z",
+                              "fill": "#000000ff",
+                              "width": 11.666666984558105,
+                              "height": 11.666666984558105,
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": 0.02083333395421505
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Dpq8H",
+              "name": "Disclaimer",
+              "clip": true,
+              "width": "fill_container",
+              "height": 73,
+              "fill": "#081a2eff",
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ywcoc",
+                  "x": 670,
+                  "y": 26,
+                  "name": "Insights / Privacy Policy / Terms & Conditions / PAIA Manual / Cookies Policy",
+                  "fill": "#ffffffff",
+                  "content": "Insights / Privacy Policy / Terms & Conditions / PAIA Manual / Cookies Policy",
+                  "lineHeight": 1.399999976158142,
+                  "textAlignVertical": "middle",
+                  "fontFamily": "Gotham",
+                  "fontSize": 14,
+                  "fontWeight": "normal",
+                  "letterSpacing": 0.56
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
