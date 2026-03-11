@@ -26,7 +26,7 @@ export default function ResultsPage() {
       : (result.projections.find((p) => p.anb === 65)?.life ?? 0)
 
   return (
-    <div className="bg-cream-light dark:bg-navy-dark">
+    <div className="flex-1 bg-cream-light dark:bg-navy-dark">
       <div className="mx-auto max-w-5xl px-4 py-12 sm:py-20">
         <div className="flex justify-end mb-4">
           <ThemeToggle />

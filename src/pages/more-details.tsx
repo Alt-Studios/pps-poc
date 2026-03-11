@@ -22,7 +22,7 @@ export default function MoreDetailsPage() {
   if (!age65Projection) return <Navigate to="/" replace />
 
   return (
-    <div className="bg-cream-light dark:bg-navy-dark">
+    <div className="flex-1 bg-cream-light dark:bg-navy-dark">
       <div className="mx-auto max-w-5xl px-4 py-12 sm:py-20">
         <div className="flex justify-end mb-4">
           <ThemeToggle />

@@ -3,7 +3,7 @@ import { ThemeToggle } from '@/components/theme-toggle'
 
 export default function HomePage() {
   return (
-    <div className="bg-cream-light dark:bg-navy-dark flex items-center justify-center p-4 sm:p-6 py-12 sm:py-20">
+    <div className="flex-1 bg-cream-light dark:bg-navy-dark flex items-center justify-center p-4 sm:p-6 py-12 sm:py-20">
       <div className="w-full max-w-lg">
         <div className="rounded-xl overflow-hidden shadow-lg">
           {/* Header */}
