@@ -6,7 +6,6 @@ import { useConfetti } from '@/components/confetti'
 import ResultsChart from '@/components/results-chart'
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { ThemeToggle } from '@/components/theme-toggle'
 
 export default function ResultsPage() {
   const { result, inputs, reset } = useCalculator()
@@ -26,8 +25,7 @@ export default function ResultsPage() {
       : (result.projections.find((p) => p.anb === 65)?.life ?? 0)
 
   return (
-    <div className="min-h-screen bg-cream-light dark:bg-navy-dark">
-      <ThemeToggle />
+    <div className="bg-cream-light dark:bg-navy-dark">
       <div className="mx-auto max-w-5xl px-4 py-8 sm:py-12">
         <div className="mb-6 sm:mb-10 text-center">
           <p className="text-xs uppercase tracking-[0.12em] text-gold">

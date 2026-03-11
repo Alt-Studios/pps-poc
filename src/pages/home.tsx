@@ -1,10 +1,8 @@
 import { CalculatorForm } from '@/components/calculator-form'
-import { ThemeToggle } from '@/components/theme-toggle'
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-cream-light dark:bg-navy-dark flex items-center justify-center p-3 sm:p-4">
-      <ThemeToggle />
+    <div className="bg-cream-light dark:bg-navy-dark flex items-center justify-center p-3 sm:p-4 py-8 sm:py-12">
       <div className="w-full max-w-lg">
         <div className="rounded-xl overflow-hidden shadow-lg">
           {/* Header */}
